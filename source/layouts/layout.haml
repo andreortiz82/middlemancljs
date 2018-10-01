@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    %title= current_page.data.title || "Middleman CLJS"
+    / Normalize
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css", :rel => "stylesheet", :type => "text/css"}/
+
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.3.1/css/all.css", :integrity => "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU", :rel => "stylesheet"}/
+
+    = stylesheet_link_tag "site"
+  %body
+    = yield
+    = javascript_include_tag "site"
+    :javascript
+      foobar.core.init();

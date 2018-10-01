@@ -1,0 +1,43 @@
+body {
+  background: $app-background;
+}
+
+// Responsive helper - DEBUG ONLY
+span[role='debug'] {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  @include mq('lg') { border-top: 5px solid $green; }
+  @include mq('md') { border-top: 5px solid $yellow; }
+  @include mq('sm') { border-top: 5px solid $red; }
+}
+
+.container {
+  margin: auto;
+  max-width: 90%;
+}
+
+// Buttons
+.button {
+  @include border-radius;
+  display: inline-block;
+  padding: rem(10) rem(20);
+  text-transform: uppercase;
+  font-size: rem(14);
+  letter-spacing: rem(1);
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.9;
+  background: $almost-black;
+  color: $white;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

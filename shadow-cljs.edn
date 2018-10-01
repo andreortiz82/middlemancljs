@@ -1,0 +1,15 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["source/cljs"]
+
+ :dependencies
+ [[reagent "0.8.1"]]
+
+ :builds
+ {:app {:target :browser
+        :output-dir ".tmp/javascripts"
+        :asset-path "/javascripts"
+        :modules {:site {:entries [foobar.core]}}
+        :devtools {:repl-init-ns foobar.core
+                   :before-load foobar.core/stop
+                   :after-load foobar.core/start}}}}
