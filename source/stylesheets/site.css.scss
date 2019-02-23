@@ -4,3 +4,28 @@
 @import "utils/mixins";
 @import "utils/helpers";
 @import "utils/typography";
+@import "utils/layout";
+
+// Intro page
+.app-container {
+  margin: auto;
+
+  @include mq('lg') { max-width: 40%; }
+  @include mq('md') { max-width: 80%; }
+  @include mq('sm') { max-width: 100%; }
+
+  .banner {
+    background: $light;
+    padding: rem(20);
+    h1 { margin: 0 0 rem(20) 0; }
+    code {
+      background: $white;
+      display: inline-block;
+    }
+  }
+
+  .featuring {
+    padding: rem(20);
+    h2 { margin: 0 0 rem(20) 0; }
+  }
+}

@@ -10,3 +10,4 @@ gem 'rake'
 gem 'puma'
 gem 'rack-contrib'
 gem 'haml'
+gem "rack", ">= 2.0.6"

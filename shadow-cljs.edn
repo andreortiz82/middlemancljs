@@ -3,13 +3,13 @@
  ["source/cljs"]
 
  :dependencies
- [[reagent "0.8.1"]]
+ [[rum "0.11.3"]]
 
  :builds
  {:app {:target :browser
         :output-dir ".tmp/javascripts"
         :asset-path "/javascripts"
-        :modules {:site {:entries [foobar.core]}}
-        :devtools {:repl-init-ns foobar.core
-                   :before-load foobar.core/stop
-                   :after-load foobar.core/start}}}}
+        :modules {:site {:entries [styleguide.core]}}
+        :devtools {:repl-init-ns styleguide.core
+                   :before-load styleguide.core/stop
+                   :after-load styleguide.core/start}}}}
