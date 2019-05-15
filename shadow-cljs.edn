@@ -9,7 +9,7 @@
  {:app {:target :browser
         :output-dir ".tmp/javascripts"
         :asset-path "/javascripts"
-        :modules {:site {:entries [styleguide.core]}}
-        :devtools {:repl-init-ns styleguide.core
-                   :before-load styleguide.core/stop
-                   :after-load styleguide.core/start}}}}
+        :modules {:site {:entries [components.core]}}
+        :devtools {:repl-init-ns components.core
+                   :before-load components.core/stop
+                   :after-load components.core/start}}}}
