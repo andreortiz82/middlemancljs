@@ -1,7 +1,9 @@
-body {
-  &.no-scroll { overflow: hidden; }
-}
+.round { @include border-radius($round); }
+.radius { @include border-radius; }
+.shadow { @include shadow; }
 
+.no-scroll,
+.overflow-hide { overflow: hidden; }
 
 // Responsive helper - DEBUG ONLY
 span[role='debug'] {

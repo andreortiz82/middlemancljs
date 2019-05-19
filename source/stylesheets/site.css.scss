@@ -13,19 +13,15 @@
   @include mq('lg') { max-width: 40%; }
   @include mq('md') { max-width: 80%; }
   @include mq('sm') { max-width: 100%; }
+}
 
-  .banner {
-    background: $light;
-    padding: rem(20);
-    h1 { margin: 0 0 rem(20) 0; }
-    code {
-      background: $white;
-      display: inline-block;
-    }
-  }
+.logo {
+  width: rem(100);
+  height: rem(100);
+  margin-right: rem(40);
 
-  .featuring {
-    padding: rem(20);
-    h2 { margin: 0 0 rem(20) 0; }
+  img {
+    width: 100%;
+    height: 100%;
   }
 }

@@ -1,26 +1,47 @@
+// Basic FlexBox
 .flex {
   display: flex;
   flex-direction: row;
-
   .box { flex: 0 1 auto; }
 }
 
-.inline-block { display: inline-block; }
-.block { display: block; }
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
 
+// Block layout
+.inline-block { display: inline-block; }
+.block,
+.show { display: block; }
+.hide { display: none; }
+
+// Margin and Padding
 @each $space in $margin-and-padding-breaks {
+  // margin
   .m-#{$space} { margin: rem($space); }
+  // margin-top
   .mt-#{$space} { margin-top: rem($space); }
+  // margin-bottom
   .mb-#{$space} { margin-bottom: rem($space); }
+  // margin-left
   .ml-#{$space} { margin-left: rem($space); }
+  // margin-right
   .mr-#{$space} { margin-right: rem($space); }
+  // padding
   .p-#{$space} { padding: rem($space); }
+  // padding-top
   .pt-#{$space} { padding-top: rem($space); }
+  // padding-bottom
   .pb-#{$space} { padding-bottom: rem($space); }
+  // padding-left
   .pl-#{$space} { padding-left: rem($space); }
+  // padding-right
   .pr-#{$space} { padding-right: rem($space); }
 }
 
+// 12 Column Grid
 .row {
   display: flex;
   flex-direction: row;

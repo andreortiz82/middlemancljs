@@ -2,5 +2,31 @@
 title: Middleman + CLJS
 ---
 
-#app
--# This is where the magick happens!
+.app-container
+  .banner.mt-40
+    .logos.flex.justify-start.mb-40
+      .mm.logo
+        =image_tag "middleman-logo.svg"
+      .cljs.logo
+        =image_tag "cljs-logo.svg"
+      .heroku.logo
+        =image_tag "heroku-logo.svg"
+
+    %h1 Middleman + CLJS
+    %p.lead This project is meant to serve protoyping template.
+    %p
+      Additionally, I've included some boiler-plate
+      %kbd SCSS
+      which can be found here:
+
+    %div.flex
+      .box.mr-10
+        %b.mb-20.block CSS Utils
+        %code.pink="source/stylesheets/utils"
+
+      .box
+        %b.mb-20.block CLJS Component
+        %code.blue="source/cljs/components/core.cljs"
+
+.app-container
+  #component-example-container
