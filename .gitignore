@@ -5,7 +5,6 @@
 .nrepl-port
 .ruby-version
 
-build/
 node_modules/
 .shadow-cljs/
 .tmp/
