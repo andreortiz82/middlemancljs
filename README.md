@@ -49,5 +49,5 @@ heroku create MY_PROJECT
 
 **Deploy to Heroku**
 ```
-heroku push origin master
+git push heroku master
 ```
