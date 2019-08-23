@@ -3,7 +3,8 @@
  ["source/cljs"]
 
  :dependencies
- [[rum "0.11.3"]]
+ [[rum "0.11.3"]
+  [reagent "0.8.1"]]
 
  :builds
  {:app {:target :browser
