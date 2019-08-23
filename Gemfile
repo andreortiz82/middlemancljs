@@ -8,7 +8,7 @@ gem 'rake'
 gem 'puma'
 gem 'rack-contrib'
 gem 'haml'
-gem 'nokogiri'
+gem "nokogiri", ">= 1.10.4"
 gem "rack", ">= 2.0.6"
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
