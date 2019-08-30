@@ -2,6 +2,10 @@
   (:require
    [rum.core :as rum]))
 
+(defn code [component]
+ [:div
+  [:h1 "Hello"]])
+
 (rum/defcs app
   < (rum/local {:count 0})
   [state]
