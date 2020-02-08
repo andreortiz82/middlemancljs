@@ -6,11 +6,11 @@ gem "middleman-livereload", "~> 3.4.6"
 gem 'middleman-google-analytics', '~> 3.0'
 gem 'middleman-syntax'
 gem 'rake'
-gem 'puma'
+gem "puma", ">= 3.12.2"
 gem 'rack-contrib'
 gem 'haml'
 gem "nokogiri", ">= 1.10.4"
-gem "rack", ">= 2.0.6"
+gem "rack", ">= 2.0.8"
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
