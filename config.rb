@@ -18,7 +18,7 @@ activate :external_pipeline,
 configure :build do
   activate :minify_css
   # Append a hash to asset urls
-  activate :asset_hash
+  # activate :asset_hash
   # Gzip assets
-  activate :gzip
+  # activate :gzip
 end

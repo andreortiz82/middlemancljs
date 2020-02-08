@@ -1,19 +1,23 @@
 (ns components.core
   (:require
-   [rum.core :as rum]))
+   [reagent.core :as r :refer [atom]]))
 
-(rum/defcs app
-  < (rum/local {:count 0})
-  [state]
-  (let [local (:rum/local state)
-        {:keys [count]} @local]
-    [:div
-      [:div.bg-blue.p-40.mt-40.white
-       {:on-click #(swap! local assoc :count (inc count))}
-       "Click me - I'm a CLJS component"
-       [:h2 count]
-       [:code.blue (str @local)]]]))
+(defn click-testr [count]
+  [:div.bg-blue.p-10.white.has-pointer.text-center.has-cursor
+    {:on-click #(swap! count inc)}
+    [:code (str "Click me ---> " @count)]])
 
-(defn ^:export init
-  []
-  (rum/mount (app) (.getElementById js/document "component-example-container")))
+(defn app []
+  (let [count (atom 0)]
+    (fn []
+      [:div [click-testr count]])))
+
+(defn mount []
+  (r/render
+   [app]
+   (.getElementById
+    js/document
+    "component-example-container")))
+
+(defn ^:export init []
+  (mount))

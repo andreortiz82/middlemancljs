@@ -3,7 +3,7 @@
    [reagent.core :as r :refer [atom]]))
 
 (defn click-testr [count]
-  [:div.bg-blue.p-10.mt-40.white.has-pointer.text-center.has-cursor
+  [:div.bg-blue.p-10.white.has-pointer.text-center.has-cursor
     {:on-click #(swap! count inc)}
     [:code (str "Click me ---> " @count)]])
 
