@@ -1,0 +1,1 @@
+{"version":3,"sources":["pui/core.cljs"],"mappings":";;;AAIA;;;AAAA,AAAMA,AAEHC;AAFH,AAGE;AAAA,AAAA,AAAA,AAEG,AAAKA","names":["pui.core/foo","arg"],"sourcesContent":["(ns pui.core\n  (:require\n    [reagent.core :as r]))\n\n(defn foo\n  \"test component\"\n  [arg]\n  (fn []\n    [:div.c-foo\n     (str arg)]))\n"]}

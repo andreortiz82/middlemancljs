@@ -10,7 +10,7 @@ This project uses [shadow-cljs](https://github.com/thheller/shadow-cljs) to comp
 - [SCSS](https://sass-lang.com/)
 - [HAML](http://haml.info/)
 - [Reagent](https://github.com/reagent-project/reagent)
-- Deployment ready on [Heroku](https://heroku.com)
+- ~~Deployment ready on [Heroku](https://heroku.com)~~
 - Basic HTTP Authentication
 
 ## Getting started
@@ -38,16 +38,15 @@ Project will be running here [localhost:4567](http://localhost:4567)
 
 ![Happy](https://media.giphy.com/media/nDSlfqf0gn5g4/giphy.gif)
 
-### 5. Deploy to Heroku
-
-Let's get this project deployed to heroku. I'm going to assume you have some experience with heroku. If not, take a look at their [docs](https://heroku.com/docs) for official instruction. I'm not a pro in this area.
-
-**Create the project on Heroku**
+### 5. Build
 ```
-heroku create MY_PROJECT
+middleman build
 ```
 
-**Deploy to Heroku**
-```
-git push heroku master
-```
+### 6. Deploy to Heroku
+
+**UPDATE**
+
+I have removed this section because there's got to be a better way to publish to Heroku.
+
+~~Let's get this project deployed to heroku. I'm going to assume you have some experience with heroku. If not, take a look at their [docs](https://heroku.com/docs) for official instruction. I'm not a pro in this area.~~
