@@ -9,7 +9,7 @@ This project uses [shadow-cljs](https://github.com/thheller/shadow-cljs) to comp
 ## What's inside
 - [SCSS](https://sass-lang.com/)
 - [HAML](http://haml.info/)
-- [Rum (React wrapper)](https://github.com/tonsky/rum)
+- [Reagent](https://github.com/reagent-project/reagent)
 - Deployment ready on [Heroku](https://heroku.com)
 - Basic HTTP Authentication
 
