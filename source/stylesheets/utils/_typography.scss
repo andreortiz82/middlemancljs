@@ -6,6 +6,7 @@ body {
 
 .sans { font-family: 'Helvetica', Arial, sans-serif; }
 .serif { font-family: 'Georgia', Times, serif; }
+.mono { font-family: monospace; }
 
 // Text formatting
 .bold { font-weight: 700 }
@@ -15,6 +16,11 @@ body {
 .uppercase { text-transform: uppercase; }
 .downcase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
+
+// Text Alignment
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
 hr {
 	border: none;
@@ -38,29 +44,10 @@ $heading-sizes: (
 	}
 }
 
-// Paragraphs + Blockquotes
-p.lead,
-blockquote.lead {
-	font-size: rem($lead);
-	line-height: rem(36);
-}
-
-p.subtle,
-blockquote.subtle {
-	font-size: rem($subtle);
-	color: $dark;
-	line-height: rem(20);
-}
-
-blockquote {
-  border-left: 1px solid $grey;
-  padding-left: rem(10);
-}
-
 // Code
 code,
 kbd {
 	color: $pink;
 	background: $light;
-	padding: rem(5);
+	padding: rem(2);
 }

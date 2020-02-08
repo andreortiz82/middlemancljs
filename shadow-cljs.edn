@@ -3,8 +3,7 @@
  ["source/cljs"]
 
  :dependencies
- [[rum "0.11.3"]
-  [reagent "0.8.1"]]
+ [[reagent "0.8.1"]]
 
  :builds
  {:app {:target :browser
@@ -12,5 +11,5 @@
         :asset-path "/javascripts"
         :modules {:site {:entries [components.core]}}
         :devtools {:repl-init-ns components.core
-                   :before-load components.core/stop
-                   :after-load components.core/start}}}}
+                   :before-load components.core/mount
+                   :after-load components.core/mount}}}}

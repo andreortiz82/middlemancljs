@@ -1,12 +1,12 @@
 .round { @include border-radius($round); }
 .radius { @include border-radius; }
 .shadow { @include shadow; }
-
+.has-pointer { cursor: pointer; }
 .no-scroll,
 .overflow-hide { overflow: hidden; }
 
 // Responsive helper - DEBUG ONLY
-span[role='debug'] {
+span[role='responsive-helper'] {
   display: block;
   position: fixed;
   width: 100%;
@@ -27,8 +27,8 @@ span[role='debug'] {
     color: $white;
     font-weight: bold;
 
-    @include mq('lg') { background: $green; content: 'lg'; }
-    @include mq('md') { background: $yellow; content: 'md'; }
-    @include mq('sm') { background: $red; content: 'sm'; }
+    @include mq('lg') { background: $green; content: 'Desk'; }
+    @include mq('md') { background: $yellow; content: 'Tablet'; }
+    @include mq('sm') { background: $red; content: 'Mobile'; }
   }
 }

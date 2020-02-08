@@ -7,7 +7,7 @@
     %title= current_page.data.title || "Middleman + CLJS"
     / Normalize
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.3.1/css/all.css", :integrity => "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU", :rel => "stylesheet"}/
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.3.1/css/all.css", :integrity => "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU", :rel => "stylesheet"}
 
     / For old IEs
     %link{:href => "images/favicons/favicon.ico", :rel => "shortcut icon"}/
@@ -31,15 +31,15 @@
     %link{:href => "images/favicons/favicon-32.png", :rel => "icon", :sizes => "32x32"}/
     / For IE10 Metro
     %meta{:content => "#FFFFFF", :name => "msapplication-TileColor"}/
-    %meta{:content => "favicon-144.png", :name => "msapplication-TileImage"}/
+    %meta{:content => "images/favicons/favicon-144.png", :name => "msapplication-TileImage"}/
     %meta{:content => "#ffffff", :name => "theme-color"}/
     / Chrome for Android
-    %link{:href => "manifest.json", :rel => "manifest"}/
-    %link{:href => "favicon-192.png", :rel => "icon", :sizes => "192x192"}/
+    %link{:href => "images/favicons/manifest.json", :rel => "manifest"}/
+    %link{:href => "images/favicons/favicon-192.png", :rel => "icon", :sizes => "192x192"}/
 
     = stylesheet_link_tag "site"
   %body
-    %span{role: "debug"}
+    %span{role: "responsive-helper"}
     = yield
     = javascript_include_tag "site"
     :javascript
