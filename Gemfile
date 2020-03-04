@@ -6,7 +6,7 @@ gem "middleman-livereload", "~> 3.4.6"
 gem 'middleman-google-analytics', '~> 3.0'
 gem 'middleman-syntax'
 gem 'rake'
-gem "puma", "~> 3.12.2"
+gem "puma", "~> 3.12.4"
 gem 'rack-contrib'
 gem 'haml'
 gem "nokogiri", ">= 1.10.4"
