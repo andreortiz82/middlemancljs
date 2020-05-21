@@ -7,7 +7,7 @@ end
 
 Haml::TempleEngine.disable_option_validator!
 
-activate :livereload
+# activate :livereload
 activate :syntax
 
 activate :external_pipeline,

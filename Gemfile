@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 ruby "~> 2.6.3"
-gem 'middleman', '~> 4.2'
+gem 'middleman', '~> 4.3'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem "middleman-livereload", "~> 3.4.6"
 gem 'middleman-google-analytics', '~> 3.0'
 gem 'middleman-syntax'
 gem 'rake'
-gem "puma", "~> 3.12.2"
+gem "puma", "~> 3.12.4"
 gem 'rack-contrib'
 gem 'haml'
 gem "nokogiri", ">= 1.10.4"
