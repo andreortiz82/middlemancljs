@@ -10,7 +10,7 @@ gem "puma", "~> 3.12.4"
 gem 'rack-contrib'
 gem 'haml'
 gem "nokogiri", ">= 1.10.4"
-gem "rack", "~> 2.1.2"
+gem "rack", "~> 2.1.4"
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
