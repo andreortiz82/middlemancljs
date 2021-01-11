@@ -12,4 +12,4 @@ gem "nokogiri", ">= 1.10.4"
 gem "rack", "~> 2.1.2"
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
-gem 'redcarpet', '~> 3.3'
+gem 'redcarpet', '~> 3.5'
